@@ -1,5 +1,5 @@
-import { FunctionComponent } from "react";
-import styles from "./Team.module.css";
+import { FunctionComponent, useCallback } from "react";
+import styles from "./Small95.module.css";
 
 const Team: FunctionComponent = () => {
   return (
@@ -42,6 +42,21 @@ const Team: FunctionComponent = () => {
             <b className={styles.andryFord}>Andry Ford</b>
             <div className={styles.ceoAtWhatever}>CEO at Whatever</div>
           </div>
+        </button>
+        <button className={styles.col1} onClick={onCol4Click}>
+          <div className={styles.norwaycard}>
+            <img
+              className={styles.norwayimageIcon}
+              alt=""
+              src="/tuscanyimage@2x.png"
+            />
+            <div className={styles.destinationDetails}>
+              <b className={styles.paris}>Tuscany</b>
+              <div className={styles.details3}>
+                <div className={styles.div3}>$1245</div>
+                <div className={styles.from3}>from</div>
+              </div>
+            </div>
         </div>
         <div className={styles.rectangleParent}>
           <img
@@ -59,4 +74,5 @@ const Team: FunctionComponent = () => {
   );
 };
 
-export default Team;
+
+export default Small95;
